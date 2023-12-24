@@ -1,0 +1,1474 @@
+
+Commodore C65/C64DX information file #2.
+
+Following is the 2nd revision of the Commodore C65 (64DX) information
+FAQ file.  I was requested by Marko to attempt to maintain the file,
+partly due to the fact that I'm one of the C65 owners.  Maintaining
+a FAQ is something totally new to me, so please bear with me on any
+mistakes I may make in the course of this project.  Feel free to
+input suggestions, comments, etc to me: gpage@nyx.cs.du.edu or the
+alternate system address: gpage@nyx10.cs.du.edu  .  Or, if you wish,
+you may also reach me on FIDO Net as George Page on Zone 1, Net 104,
+Node 518  -The Silver Hammer-(303)367-9701 ( in Denver,Colorado, USA).
+
+What follows is Marko's first version of the FAQ, with succeeding
+comments appended by myself.  The FTP info may not be totally current
+since Marko is on extended absence from his site.  Comments are drawn
+from Internet, FIDO Net, and Pearako (C-NET128) Net posts, as well as
+a few comments of my own added to this FAQ file.
+Thank to everyone quoted in here for their input.
+
+
+Subject: C65 FAQ
+Date: Sun Dec 26 17:39:05 MST 1993
+Lines: 310
+Distribution: world
+Mime-Version: 1.0
+Content-Type: text/plain
+Content-Transfer-Encoding: 8bit
+
+Here's the FAQ file I promised. The C65 technical detail posting by
+Fred Bowen was archived on my VAX/VMS account, which I don't use much
+these days. Fortunately I remembered to check it.
+
+This file can be retrieved via anonymous FTP from ftp.funet.fi. The
+filename for the GNU zipped version is /pub/cbm/faq/c65-faq.1.0.gz, the
+uncompressed version is /pub/cbm/faq/c65-faq.1.0.
+
+ So, here it goes:
+
+        Commodore 65 Frequently Asked Questions - Version 1.0
+
+
+Around the year 1990 or 1991, Commodore Business Machines was planning
+to introduce a successor for the famous Commodore 64, the Commodore
+65.  The project was canned, mainly because of huge amounts of
+software that pushed the C64's video chip to its limit, and did not
+work at all with the new C65's video controller, CSG 4567. Also, the
+machine might have been too expensive to interest the big audience.
+
+In this file there are a few articles captured from the newsgroup
+comp.sys.cbm and from some other sources. I hope that they will
+saturate your need of information.
+
+This file was put up by Marko Mdkeld <Marko.Makela@Helsinki.FI>.
+I do not have a C65, so please direct your inquiries to the
+comp.sys.cbm newsgroup.
+
+----------
+From: fred@cbmvax.cbm.commodore.com (Fred Bowen)
+Newsgroups: comp.sys.cbm
+Subject: Re: What's a C-65???
+Message-ID: <CDI6u2.2uz@cbmvax.cbm.commodore.com>
+Date: 17 Sep 93 14:56:25 GMT
+References: <al170866.747909924@academ01>
+<1993Sep14.212254.1717@mnemosyne.cs.du.edu>
+
+Reply-To: fred@cbmvax.cbm.commodore.com (Fred Bowen)
+Lines: 61
+>(quoted from George Page)
+>To the best of my knowledge, the C65 was never put into production.  I
+>visited the person last week who actually wrote the DOS operating system
+>for it, and saw a prototype of it.  According to him, Mr, Gould "pulled
+>the plug" on the system shortly before its' completion date.  The British
+>mags had some coverage of it in previews about a year-year and a half ago,
+>but that was the end of it.  Too bad, cause it was a decent little
+>critter, with a built-in 3.5" drive, and a lot more features and memory
+>and such than the C64.
+
+Apparently Grapevine picked up some C65's during Commodore's liquidation
+of its warehouse/storage areas a couple months ago.
+
+What is a C65?  A product that almost made it out the door.  What you're
+seeing are "alpha" pilot-production units.  There were only something
+like 50 units made, and a dozen or more of these were distributed around
+engineering, system developers, etc.  Obviously, they were never meant
+to be sold to the public, but...
+
+  CPU        CSG65CE02, running at 3.54MHz
+
+  RAM        128K, expansion to ~8MB
+  ROM       128K, including C65 mode (v10.0), C64 (v2.2) mode, & DOS
+  Video       CSG4567 "VIC-III"
+              analog RGB with composite sync on each primary,
+              separate active-high digital sync,
+              composite chroa/luma,
+              digital fgnd/bgnd control (genlock)
+              all original C64 video modes (40x25 text, 320x200 bitmap)
+              new modes (80x25 text, with blink, bold, underline attributes)
+              true bitplane graphics (VGA resolution):
+              320, 640, 1280 horz. pixels in 8, 4, or 2 planes
+              200, 400 vert. pixels, non-interlaced & interlaced
+              DAT "display address translator" to access display memory
+              standard 16-color C64 palette
+              programmable 256-color palette with 16 intensity levels per
+              primary color.
+   Audio        Stereo SID chips
+   Keybd        77 keys, including separate cursor keys, ALT, ESC, etc.
+   Disk        Built-in 3.5" double-sided, 1MB MFM (1581 format)
+               custom 4191 controller with 512 byte buffer and  parallel bus
+               external mini-DIN for one A1011-type expansion drive.
+               accepts CBM serial drives (1541,1571,1581), fast/slow/burst
+   I/O         Built-in DMA/blitter
+               Built-in 6511-type UART, supports MIDI data rate.
+               All C64 ports: parallel, expansion, etc.
+               new RAM expansion port, accessible by DMA and video chips.
+
+I guess that's enough for now.  But be warned- these boards are very out
+of date- the ROMs, PLA's, etc. are pre-pre-preALPHA, there are absolutely
+NO spare parts (so if it breaks, that's it!), all systems are PAL (but
+they display okay on regular 1084-type monitors in analog mode).  Oh,
+and there aren't any manuals.  I'm surprised that Grapevine can sell them
+as "new" equipment.  Buyer beware, and all that.
+
+All things considered, not a bad machine, though.  I still use mine :-)
+--
+--
+Fred Bowen                        uucp:        ...!rutgers!cbmvax!fred
+                                domain:        fred@cbmvax.cbm.commodore.com
+                                tele:        215 431-9100
+
+Commodore Electronics, Ltd.,  1200 Wilson Drive,  West Chester,  PA,  19380
+
+------------
+Message 60        Thu Dec 23, 1993
+R.DAY                        at 20:08 EST
+
+
+I have my c65! Got it today about 3 hours ago. I looked at how the power plug
+hooks up and it's the same as the 1581! Only it needs 2.2 amps for +5 volts
+and .5 amps for the 12 volts. I just pluged in my power supply from my 1581
+that will all so power 3 other drives. It came up the 1st time on my 1084
+monitor. The 9 pin plug plugs right in and the U shaped din plugs right in.
+Only black and wight in 40 mode but color in 80 mode. looks like a 128 using
+40 or 80 in the 80 mode. The power pupply that comes with it does not have any
+plug on the end for the power to the wall. Input says 240VAC 0.17A. You can
+hold down the C= key to be in 64 mode. Stereo player will load and work but
+does not see the 2nd 8580 sid chip. There is 2 of them in the c65. My guess is
+the 2nd one is addressed at $d480. I will have to check it out. The bilt in
+drive is a 81 says 73,copyright cbm cbdos v1.0,00,00 The one in my C65 does
+not work too good. I have to figger out how to make it a nother device #. You
+can plug in a C= modem and the cartridge port will not fit c64 or 128
+cartridges. I think it would with a adapter. The pins are closer together just
+a little. in the c65 mode you can to in a moniter it's like the 128. You can
+even say go64 and it ask are you sure? It goes there right away. The video is
+very good. It just has a border on the top and buttom about 1 inch. each and
+the sides are a little showing. So that the screen is a little wider. Well any
+one can get this! Just get the HD power pupply from CMD. But this cost I think
+$50. It should plug right in to the C65! I got mine from a nother  place and
+had to put a case on it but only cost me about $30. Has more amps then the CMD
+
+one too. Well I will have to figger this one how it works more but looks like
+it's just a nother 128 with a bilt in 1581. The inside on the board said for
+some chip names: DMAGIC, VICTOR, BILL, and ELMER. It all so has this:
+LASSA/GARDEI/NINESPCB/ANDRADE/JP/TL/HM/TC/CW/FISH/HD/GT/DF/BF/ETC and mine
+says C64 DX REV 2B commodore electronics ltd copyright (c) 191990 all rights
+reserved. Well I guess that's all I can say about it. It just took them long
+to get it to me. I will have to clean some of the dust off the keyboard too.
+
+------------
+From: ralphey@kittyhawk.aero.rmit.OZ.AU (Russell Alphey)
+Newsgroups: comp.sys.cbm
+Subject: I have a C65!!! :)))))))))))
+Date: 1 Dec 1993 06:49:15 GMT
+Lines: 90
+Message-ID: <2dhepb$1f0@aggedor.rmit.EDU.AU>
+NNTP-Posting-Host: kittyhawk.aero.rmit.oz.au
+
+
+With trembling hands I opened the large box from The Grapevine Group.
+My wife grabbed the invoice and said, "What's a C65 with built-in disk
+drive?".  This is what I hoped to find out!
+
+
+"Ta-da!"  A box full of foam beads.  Dig, dig, what's this?  Something
+solid...
+
+And in the box was -
+
+1 D.S.G. packet,
+1 piece carbon paper - crumpled,
+1 latex glove - grey,
+1 packet containing a 75 Ohm co-ax cable with identical ends (the sort
+that plug into a C64) and a TV-computer switch box,
+1 beige power supply, with the familiar C= on top, a 4 pin round
+connecter at one end and a flat 2 pin wall plug with round pins.  The
+underside has "FOR C65 ONLY POWER SUPPLY".  The word C65 is on a sticker.
+
+Oh, there was one other thing in the box :)))))))))))))))))))))
+
+A computer.
+
+Normal C= beige colo(u)r.  Key lettering like that on a C128.
+Computer is about 18" by 8", and like a flat 128, but no separate
+keypad (there's a 3.5" disk drive there instead :).  The drive points
+forward, with the eject button on the leading edge of the keyboard.
+
+
+Key layout is as follows.
+
+
+<power                                                   <drive
+ light>                                                   light>
+
+Run              Caps No        F1 F3 F5 F7   F9  F11 F13 Help
+Stop     Esc Alt Lock Scroll    F2 F4 F6 F8   F10 F12 F14
+
+<-  1   2    3   4    5      6  7  8  9  0  + -   #   Clr Inst
+
+Tab  q    w   e   r    t      y  u  i  o  p  @  *  ^    Restore
+
+Ctrl S/Lock a s d  f    g      h  j  k  l  :  ;  =  return
+
+C= Shift z    x  c  v    b      n  m  <  >  /  Shift ^
+
+            ...........space...............        < v >
+
+Note that # is the English pound symbol.
+
+
+Also, there's a spot where a metal plaque could go, like on the 64s.
+
+
+Okay, now for a tour around the computer.
+
+Left side has a reset button, Cont port 1 and 2 (joystick ports), the
+power switch and power inlet.
+
+Right side is blank.
+
+Back has, (from left as you look at it) a round hole labelled disk
+drive (but nothing there), a video port (like 128's), a switch (or
+screw) labelled "L H", an RF port, an RGB video port, a Stereo port
+with R & L ports, a User port, a CBM serial port, and finally an
+expansion port.
+
+Underneath there's a flap which conceals what appears to be a miniture
+centronics port, and the manufacturer's label.  It reads -
+
+C= commodore
+Model C65
+Power 5vDC @ 2.2A 12vDC @ 5A
+SERIAL NO. 000062 :)))))))))))))))))))))))))))
+FCC ID NO.
+         made in hong kong
+
+Funkenstort n.DBP-Vtg 1046/84
+
+So there you have it, a real? C65.  (The :)))) above is my editorial
+comment!)
+
+Unfortunately I can't tell you anything about its operation yet,
+because I haven't fired it up yet (mainly due to the incorrect plug on
+the power supply).  But rest assured I'll report as soon as I do! :)
+
+Ralphey.
+
+--
++-----------------------------------------------------------------------------+
+| You are now the proud recipient of a genuine Ralphey .sig!                  |
+| Accept no imitations.                      ralphey@kittyhawk.aero.rmit.oz.au|
++-----------------------------------------------------------------------------+
+
+
+*End of Marko's first FAQ, with some editing of my first posts to avoid
+repetition.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Subj  : C65's 4 sale @ Grapevine
+From  : Craftsman @ 7-11
+To    : Craftsman
+Date  : Mon 20-Dec-1993  4:56pm
+Origin: Mon 20-Dec-1993  1:38pm
+--------------------------------------
+
+
+Well after three months the Commodore 65 finally arrived but no thanks to UPS.
+The '%&'&%$ drivers left the computer on the back steps along a wall where you
+could not see it.  The poor thing sat outside for several days while it snowed
+here in Colorado.  When I opened up the box water came pouring out.  Thank God
+it did not seem to effect the computer.
+
+So far I have it up and running and here are a few of the facts I have learned
+so far.
+
+        1. There are two modes of operation a C65 and C64.  You switch with
+           the command GO 64 or hold down the commodore key.
+
+        2. The Computer displays in RGB anc Composite video for both modes it
+           used the RGB also (Very sharp C64 Screen).
+
+        3. There are two sound channels at the back of the computer (2 sids I
+           belive).
+
+        4. The computer has both 40 and 80 column screens.  Both allow
+           sprites.
+
+        5. There is a 1581 style drive built in.
+
+        6. The computer is approx. the size of the Commodore 128D's key board
+           or if you took a regular 128 and cut it in half right above the
+           power light.
+
+        7. The key board layout is similar to the 128 but there are several
+           differences.  The crsr keys from the top of the 128 key board are
+           moved to where you would find the keys on the 64. They are laied
+           out much better not straight across.  There is the following keys
+           across the top RUN STOP, ESC, ALT, CAPS, NO Scroll then F1, F3,
+           F5, F7 and finally F9, F11, F13, HELP.  There is no Key Pad instead
+           the disk drive is there and the disks slide in toward the front for
+           the computer.
+
+        8. There is a cartridge port on the left rear (The Pins are smaller
+           then a Commodore 64). I don't think that an old cartridge will run
+           on it.
+
+        9. There is a regular size user port.  There is also an expansion port
+           the bottem of the computer along the lines of the Amiga.
+
+        10. In the C65 mode there is a Machine Moniter.  It shows that you can
+            Program from locations 0000 to FFFFFF.  At this time I dont know
+            how much ram is built in.  It allows the use of the BANK command.
+
+        11. I have been able to run numerous C64 programs on it.  THe verison
+            I have is a PAL one so some of the graphics are messed up mainly
+            on Demos.
+
+Well I know that there is a lot more to it then the above.  Please excuse any
+typos.  If anyone has any questions please ask.
+
+                                                CRAFTSMAN
+
+
+From: gpage@nyx10.cs.du.edu (george page)
+Subject: Some more C65 stuff.
+X-Disclaimer: Nyx is a public access Unix system run by the University
++             of Denver for the Denver community.  The University has neither
++             control over nor responsibility for the opinions of users.
+Date: Fri Dec 31 17:49:30 MST 1993
+Lines: 32
+
+Had my hands on a C65 for a little while today, and managed to get a few
+of my questions answered!  The local user who had already received his
+came by to try it out on my monitor, cause his Amiga one didn't totally
+like it.  Anyway, his is a PAL machine. No serial number or ID or anything
+on it, unlike Ralpheys, who had numbers on his.  On my 1084S monitor, in
+80 column ANALOG RGB mode (as opposed to the digital that the 128 likes),
+it behaved beautifully, except for some minor flicker-almost like a really
+mild interlace flicker.  BOTH (yes BOTH) the 40 column 64 screen and the
+40 & 80 column come up in full, sharp, clear, brilliant color in the
+monitor's 80 column RGB mode!  They apparently double the pixel size or
+whatever it is that does that, to create a simulated 40 column screen.  In
+the 40 column Chroma/Luma/Sync mode of the monitor and 64 mode of the
+computer, it just comes up in black & white.  It runs about 85% of the
+tested NTSC games/demos/whatever with no problems.  Had mixed results
+trying some PAL demo's and games on it.  F'instance, running a preview of
+Lemmings from Force or Format that had a Euro title screen on it cleared
+up the intro, but the game tore up badly.  On an NTSC machine, the intro
+was the normal (for NTSC) PAL glitchy, but the game was fine!  The second
+Lemmings demo that I snapped from the magazine tape recently runs fine on
+both machines.  We ran Stereo-Sid player V10/11 on it with a couple of
+songs, and it worked fine when we selected the proper address.
+    We tried, but were unable to access any external drives through the
+serial port. His did not have the "external drive" mini-DIN socket
+installed on the motherboard.
+   (Oh, and by the way, when we were connected to the monitor for 80col
+mode, it was through the normal 9pin DIN cable that my 128 normally uses).
+
+From: Lonnie McClure <LMCCLURE@delphi.com>
+Subject: Re: A bit more C65 followup.
+Date: Tue Jan 04 20:50:26 MST 1994
+Lines: 38
+
+It has arrived!
+
+After sacrificing a good deal of time I should have been sleeping (and
+paying for it that night at work), I learned a few things about the
+C65:
+
+First, a 1581 power supply (at least the one I have) *is* sufficient
+to power the machine. The power supply does get quite warm in doing so,
+but I worked at least a few hours with no problems. However, for long
+term reliability (of the power supply), I would still advise the use of
+something with more reserve, such as a CMD HD power supply, or a PC
+power supply with a 4-pin DIN grafted on.
+
+The only flaw I have found in the construction of the machine is that
+the right cursor key binds. This was true for another person on
+comp.sys.cbm, and in his case, turned out to be a fixable construction
+flaw. Since I will be taking mine apart, I should be able to remedy
+this on mine in much the same manner as he did.
+
+The cursor keys are in a inverted "T" arrangement, just like the
+Amiga and most modern PC keyboards.
+
+The C65 screen comes up beautifully on my 1080's screen in gloriously
+crisp RGB analog, with a deep blue background, and white text,
+defaulting to 80 columns. The borders are very small, giving more
+screen real estate than a C64. Their is a rainbow of color bars at the
+top left, the "COMMODORE C65 DEVELOPMENT SYSTEM" logo, and the
+BASIC 10 logo with the revision number (which is 0.9xxxxx something;
+I forgot to write all those numbers down <grin>). Oh, and it also
+says "NO EXPANSION RAM PRESENT". (The C65 has a hatch on the bottom
+roughly 3" x 6" [I have not measured it yet] with an expansion
+connector inside, similar to the Amiga 500 and 1200).
+
+Now for some info most of you might find of some interest, but fellow
+and future C65 owners will especially want to take note of. (Most of
+this message will be posted on the Commodore groups on Delphi, GEnie,
+and comp.sys.cbm).
+
+
+FUNCTION KEYS:
+
+ F1 - Toggles from 40 columns to 80
+ F3 - "DIR"
+ F5 - Moves cursor to beginning of prior word (or space if blank line)
+ F7 - Moves cursor to beginning of next word
+ F9, F11, F13  - No apparent function
+ HELP - "HELP"
+
+ The shifted function keys:
+
+ F2 - Erases all below cursor
+ F4 - "DIR "*=PRG""
+ F6 - "KEY 6"
+ F8 - Goes in machine language monitor
+
+ F10, F12, F14 - "KEY x" (x = fkey#)
+
+
+Issuing a "PRINT FRE(0)" command gives a result of 57,085. An argument
+of (1) gives 55,296. (2) gives 0, and (3) gives an illegal quantity
+error.
+
+POKE 53280,x still changes the border color, but there is a BORDER
+command that does the same (and a FOREGROUND and BACKGROUND command,
+as well). Only 1-16 is accepted, in both 40 and 80 column mode, so
+evidently the 265 color mode is not available in text mode (or at
+least, is not the default). 0-255 is accepted if one uses the POKE,
+but it rolls over after each increment of 16, resulting in the same
+colors.
+
+THE REGISTER COMMAND DECIPHERED:
+
+The REGISTER command takes the following form:
+
+REGISTER x,y,a,b,c
+
+x = 0 or 1 (I don't know what this does yet)
+y = 0-255 (the register number)
+
+a = 0-15 (red value)
+b = 0-15 (green value)
+c = 0-15 (blue value)
+
+Unfortunately, this has no effect on the text screen, and the GRAPHIC
+command apparently has a different syntax than the C-128's BASIC.
+
+OTHER NEW COMMANDS DECIPHERED (at least partially):
+
+DMA: Accepts DMA0,DMA1,DMA2,DMA3. I do not know what this does, other
+     than the fact that a value of 1 or 3 fills the screen with "@"
+     symbols.
+
+TYPE: Apparently displays a file (sequential) to screen. (Sorry folks,
+      I did not have my disks handy to try this out).
+
+PEN: Form is PEN x,y, where x=0-2, and y=0-255.
+
+DPAT: Form is DPATx, where x=0-63
+
+GENLOCK: Either GENLOCK ON or GENLOCK OFF. You will note a difference
+         in the screen, but I doubt this will do much without
+         genlock hardware. <grin>
+
+
+CHANGE: I used the form CHANGE "CHARLE" TO "CHARLIE" , and it did not
+        give me an error. I suspect this is a text editing command.
+
+FIND: Using FIND "CHARLIE" gave no error. (In retrospect, I really
+      should have written a program with REM CHARLIE in it and then
+      tried this.
+
+UNIMPLEMENTED COMMANDS:
+
+Issuing the following commands results in an "UNIMPLEMENTED COMMAND
+ERROR" (BASIC 10 was not yet finished, folks):
+
+PAINT, PASTE, CUT, LOCATE, SCALE, WIDTH, QUIT, OFF, SET, VIEWPORT
+
+There may have been others, but these were the ones I recorded.
+BTW, if you want to search for commands, look in memory, starting
+around decimal 9380.
+
+OTHER COMMANDS:
+
+Many other commands (such as WINDOW) appear to work just as in BASIC
+7.0 on the 128. GRAPHIC CLR works, but as noted, the standard 7.0
+
+syntax for GRAPHIC otherwise gives a syntax error.
+
+
+
+From: ralphey@kittyhawk.aero.rmit.OZ.AU (Russell Alphey)
+
+
+Subject: C65 - more user notes
+Date: Wed Jan 05 22:20:56 MST 1994
+Lines: 174
+
+
+This message was posted in Fidonet's CBM echo.  It has been reproduced, with
+some editorial comment, without permission! :)
+
+
+(595)   Mon 3 Jan 94 10:32p
+By: Alan Share
+To: GEORGE PAGE
+Re: My C65 has arrived..
+----------------------------------------------------------------------
+And the first thing i did was take to it with a screw-driver!!  That
+won't surprise people that know me!  Couldn't do much else as it
+arrived with bare wires at one end of the power supply.  Was expecting
+some plug, not the right one, but any one, as I have an adapter waiting
+for it.
+
+Anyway, after peeking through cartidge port (hmmm, bit small!) and user
+port, something didn't look right in there, so had to investigate.
+Found what looks to be a crystal (28.37156) stuck into U19, which is a
+14 pin socket. Next to it is another socket (U20) which is empty.
+Anyway, this crystal was 3/4 out of the socket, and one leg was bent
+awkwardly, wasn't too sure where that leg belonged so that entailed a
+phone call to Ralphey to get him to pull his apart and tell me where
+that leg belonged.  Not where it was pointing either.
+
+ GP> yet.  Has another "disk drive" hole in
+ GP> back, but doesn't appear to be a
+ GP> connection inside for it, unless it somehow hookes directly to the
+ GP> motherboard.
+
+On the motherboard just inside that 'disk drive' hole, is a square area
+marked 'CN12' with 8 holes for a connector of some kind.
+
+There is one Eprom amongst the chips, and damn, its a 32 pinner, so I
+guess I won't be playing with that in the Promenade!  3 of the chips
+are rather large square thingos with pins on all sides. One of these is
+called Victor, and another Bill!  Another smaller chip is called Elmer!
+
+These are markings on the board beside the chip.  Another large chip is
+a 48 pinner and its called DMAGIC.  Has that both on the chip, and on
+the board. Oh, that Eprom is a 27C010 BTW.
+
+Some other markings on the board are
+
+        C64  DX  REV  2B
+
+Commodore Electronics Ltd            lassa/gardei/ninespcb
+Copyright (c) 1990                   Andrade/jp/tl/hm/tc/cw
+All rights reserved                  Fish/hd/gt/df/bf/etc
+
+There now, this thing must be that elusive C64 DX!!!  Odd, can't find a
+second drive in here tho  :-)
+
+Getting back to that cartridge port that seemed smaller, well that was
+the hole in the case that is smaller.  C64 carts won't fit thru that,
+and even if they did, well no good, as the connector inside is a 50
+pin as against the C64's 44 pin.
+
+The video chip, as noted in Fred Bowens message is a 4567. That may be
+a problem here, as I notice that the Video chip in U.S. C64's is a
+6567, whereas here in Oz, we get them with a 6569 video chip.  Wonder
+what the difference is and what sort of a problem it will cause us. No
+chance there will be a '4569' around anywhere  :-(
+
+:: Note... Alan doesn't seem to get the "rolling screen" problem that
+::   I do.
+
+Well, after finding a useless piece of electronic equipment with a plug
+on it, and a bit of rewiring on the power supply - normal looking C64
+brick type, says underneath...for C65 only.  Peel off the C65 sticker,
+and it then says 'for C64 only' hmmm. Another sticker says '+5 VDC
+2.2A......+12 VDC 0.5A' Won't bother seeing whats under that, I think I
+can guess.  Plugged it all in, hooked up a 1701, turned it all
+on......Nothing... Uh Oh! hmmm try the 1084S, ah thats better, a
+picture, various shades of black and white.  Oh yeah, its got an RGB d
+plug, maybe that'll help. Yep, that did the trick, lovely colour... a
+blue screen, and an orange border.  Do a GO64 and its just like a 64
+screen, and yet somehow different.  Pixels seem wider, the C= opening
+screen spreads from one side to the other, without the normal side
+borders, just a hint of the border, thats all, and its a white border
+too, not the normal light blue.
+
+.....Much later...          ....next message
+
+----------------------------------------------------------------------
+
+(596)   Mon 3 Jan 94 10:59p
+By: Alan Share
+To: GEORGE PAGE
+Re: My c65 has arrived #2.
+----------------------------------------------------------------------
+Yeah, it runs SOME C64 prgs.
+
+Back to C65 mode....
+Blue screen, if a disk is in drive, attempts to autoboot, and failing,
+changes border to orange.  Seems to change the border color each time
+an unsuccessful drive attempt is made.
+
+                   THE COMMODORE C65 DEVELOPEMENT SYSTEM
+                   COPYRIGHT 1991 COMMODORE ELECTRONICS.LTD
+                   BASIC 10.0   V0.9.910111 ALL RIGHTS RESERVED
+
+
+ENGLISH KEYBOARD
+NO EXPANSION RAM
+
+READY.
+
+      Bit worried by that Version # up there, didn't even make it to
+
+Version 1  :-(     Oh, did I mention my serial #. its 000165.
+
+:: Note...my power-up screen is rather different!
+
+______________________
+| red bar          __/       THE COMMODORE C64DX DEVELOPMENT SYSTEM
+|_________________/
+|_orange? bar__/           COPYRIGHT  1991  COMMODORE ELECTRONICS, LTD.
+|_lime green/                       COPYRIGHT  1977  MICROSOFT
+|_white___/
+|_purple/                BASIC 10.0   V0.0B.910429    ALL RIGHTS RESERVED
+
+GERMAN/AUSTRIAN KEYBOARD
+NO EXPANSION ROM
+NO EXTERNAL F011 DRIVE
+ROM CHECKSUM $E96A
+
+READY.
+
+:: end note.
+
+ It doesn't seem to like another drive hooked in on the serial port.  I
+attached a device 9 1541 there, but it wouldn't access it.  Although
+
+the drive light flickers normally when the C65 is switched on, when I
+do a LOAD"$",9 it responds with 'searching' but no activity from the
+drive at all.  Returns with a 'ready' a few seconds later. List gives
+me nothing.  If I try a Load"$",10 I correctly get a 'device not
+present error'
+
+:: Note. I was able to access a 1571 as drive 11.  Haven't tried with
+::    other device numbers yet.
+
+Seems to respond to a lot of the C128 commands.  'KEY' gives the
+F-Keys.
+
+Header correctly formats a 1581 disk.
+
+Went searching with the monitor and found lots of command words, many
+of them as found in the C128, some of which react the same, some don't
+though.  Graphic won't do what I expect, can't find how to get it to
+do anything.
+
+I find a number of them give me 'Unimplemented command error' namely:-
+paint paste cut locate scale width sprdef off set viewport gcopy pic
+Is this common to them? Ralphey?
+
+:: Dunno.  Haven't tried anything other than to discover all the "hidden"
+::    keywords!  :)
+
+ Curious to know if there are other version numbers, and if there are
+other rom numbers.  My rom has a 390488-02 sticker on it with a
+pencilled line thru the 02 and a 03 beside it.
+
+:: Mine (assuming he means chip U6) is labelled C64DX DEVELOPMENT
+::    GERMAN PILOT @1, (C)1991 CBM, CS=$E96A   910501
+
+Anyway, thats my tuppence worth!
+
+Cya.........Alan
+
+& Ralphey!  :)
+--
++-----------------------------------------------------------------------------+
+| You are now the proud recipient of a genuine Ralphey .sig!                  |
+| Accept no imitations.                      ralphey@kittyhawk.aero.rmit.oz.au|
++-----------------------------------------------------------------------------+
+
+
+
+From: gpage@nyx10.cs.du.edu (george page)
+
+
+Subject: Re: C65 - more user notes
+Date: Thu Jan 06 16:42:25 MST 1994
+Lines: 20
+
+
+Durn-someone needs to give FIDO a thump! Haven't received these messages
+yet on there!  Oh, well, it's longer to OZ through FIDO than I'net, right?
+Here's my additional bunch o' cents worth. Finally got mine in.  No serial
+number or other such labels on it, but I did have a warranty seal over the
+screw hole (which I quickly voided)-had the "loose chip syndrome".
+keyboard acting flakey until all were pushed in firmly.  The built-in C65
+mode monitor allows you to access all 255 banks.  There are a number of
+new opcodes in there, that are using the numbers of the old "undocumented
+pseudo-opcodes" that we've all been warned about. These could be the
+reason for some of the C64 software not working?.  I tried a number of my
+cartridges using an adaptor board I had, and found that the old 64 game
+carts seemed to work OK.  However, none of the utility/fastload/snapshot
+type carts commonly available would access the drive.  In fact, only the
+lowly Epyx would even give functional menus. I also have been unable to
+access any other than the internal drive.  Mine is a PAL model I guess, and
+gives varying results on PAL and NTSC demo's and such.  The recent
+"theparty" demo on here at least showed part of the title screen, but the
+text never showed up properly.  More details as they develop.
+I also discovered some solder splash on the bottom of the board, and a
+sharp point on a jumper joint that appeared to penetrate the plastic
+shield and occasionally contact the metal shield.  Fixing these defects
+finally corrected my flakey keyboard problem.
+
+--------------------------------------
+Subj  : C65's 4 sale @ Grapevine
+From  : Craftsman @ 7-11
+To    : Ramlinker @ Emrg
+Date  : Thu 23-Dec-1993  6:16pm
+Origin: Thu 23-Dec-1993  9:05am
+--------------------------------------
+
+
+The C65 does have a serial port on the back side but I have not attempted to
+hook anything up to it.  It does not have any dip switches to change device
+numbers on the outside.  It appears that it would not be Jiffy Dos or RamLink
+compatibale (sob sob), but it could more than likely be changed to work with
+it.  I had to open up the computer because UPS had shipped it so hard that it
+would only work when it wanted to.  I located the problem.  It was a lose 16
+Mz timing chip.
+
+The commputers board was only approx. 4 1/2 X 11" long.  It did not look like
+any other Commodore 8 bit computer I have ever seen.
+
+The drive reads 1581 disks fine but I dont think its dos is the same.  The
+Computer appears to be about 85% comp. with programs for the 64.  I dont know
+if the programs that dont run are because of bugs in the computer or because
+this is a PAL version.
+
+Another thing that I talked about in the last post was the computer while in
+64 mode displayed its picture in RGB mode.  This makes me think that it will
+run in 4Mz mode and still show the picture.  I cant remember how to put the
+128 into 2Mz mode via programing other than the FAST command.  If I have the
+1902 Moniter in comp. mode the picture is in black and white.  I think
+commodore was going to combine the composite picture with the RGB to make more
+colors on the screen (Hard to explain you would have to see it).
+
+While in C65 mode the pokes that you would use to turn on sprites on the 128
+and 64 are the same.  It appears that many of the memory locations are the
+same.
+
+Got to let you go so I can play with the C65.
+
+                                        Craftsman
+
+
+
+from gpage@nyx:
+
+    In response to Ralphy's question about how I managed to hook up C64
+cartridges to my C65, here is a crude but functional diagram & hook-up
+instructions.  The diagram is shown looking down at the top of the
+board, with the 44 contact C64 cartridge connector at the top of the
+screen, and the 50 contact edge connector to plug into the C65 at the
+bottom. The contacts are labeled from left to right, with the C64 con-
+nectors in numeric form, and the C65 connectors in alpha form.  In the
+hookup instructions to follow, I use T and B to mean top and bottom of
+the board.  B1 would be directly below T1, Ba would be directly below
+Ta, etc.  It's up to you as to how you wish to make this thing (if you
+even want to). I would guess either etching a board, or hand wiring
+would be suitable.  Distance between the two connectors is up to you.
+(Within limits.  Too long and I'm sure you'll have problems).
+(the numbering & lettering of contacts are mine-not industry standard).
+    44 contact "C64 cartridge socket" end of the board.
+I------------------------------------------------------------------/
+I 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22/
+I                                                                /
+I   wires or traces between connectors go in this               /
+I    area between the numbers and the letters.        /--------/
+I                                                    /
+I a b c d e f g h i j k l m n o p q r s t u v w x y /
+---------------------------------------------------/
+    50 contact "edge connector to plug into C65" end of the board.
+
+That diagram was just to get us all on the same sheet of music, hope-
+fully.  I am doing the best I can to make this legible and logical, but
+I cannot be held responsible for any damage to your equipment caused by
+trying this!  It works for me, is all I'll claim!  Mine is roughly 9 CM
+total length, by the way.
+-----------------------------------------------------------------------
+Hook-up instructions-aargghh!
+First, Top and bottom end connectors on the 64 cart end, labeled t1, b1,
+t22 and b22 are all grounds, and connect to td, ty and by on the 65 end.
+(all 7 pins are interconnected).
+
+Now for the rest. (actually relatively easy, since they're all in order)
+
+t2 & t3 (joined) to te & tf (joined)       b2  to be      b12 to bo
+t4  to tg           t13 to tp              b3  to bf      b13 to bp
+t5  to th           t14 to tq              b4  to bg      b14 to bq
+t6  to ti           t15 to tr              b5  to bh      b15 to br
+t7  to tj           t16 to ts              b6  to bi      b16 to bs
+t8  to tk           t17 to tt              b7  to bj      b17 to bt
+t9  to tl           t18 to tu              b8  to bk      b18 to bu
+t10 to tm           t19 to tv              b9  to bl      b19 to bv
+t11 to tn           t20 to tw              b10 to bm      b20 to bw
+t12 to to           t21 to tx              b11 to bn      b21 to bx
+
+ta, tb, tc, ba, bb, bc, and bd are not connected.
+
+-----------------------------------------------------------------------
+Have fun, and keep in mind that the older 64 game cartridges seem to
+work (at least the few I tried), and the speedloader/memory save types
+don't want to work.  George.
+
+
+From: Lonnie McClure <lmcclure@delphi.com>
+Subject: C65 Commands
+Date: Wed Jan 26 05:03:12 MST 1994
+Lines: 138
+
+The following info on the C65 was provided by M.Matting (a lucky guy
+with the C65 manual):
+==============================
+GRAPHIC - select graphic mode
+
+GRAPHIC CLR
+
+GRAPHIC command#, [,args]
+
+Basically this is a modified C64-type SYS command, minus the address. In
+the C64DX system, this will represent the ML interface, not the BASIC
+10.0 interface which is implemented in the development system.
+
+[*** THIS COMMAND IS SUBJECT TO CHANGE ***]
+
+GRAPHIC CLR initializes (warm-starts) the BASIC graphic system. It
+clears any existing graphic modes, screens etc. and allows a program
+to commence graphics from scratch
+
+DMA - Perform a DMA operation
+
+DMA command [,length,source(l/h/b),dest(l/h/b),subcmd,mod(l/h) [,...]]
+
+[*** THIS COMMAND IS SUBJECT TO CHANGE ***]
+
+The DMA command defines and executes a DMA operation. The parameters are
+used to construct a DMA list, which is then passed to the DMA processor
+for execution. Refer to the DMA chip specification for details. Chained
+DMA commands are not allowed. (...)
+
+DMA 3,2000,ASC("+"),0,DEC("800"),0     Fill screen with "+"
+
+DMA 0,2000,DEC("800"),0,DEC("8000"),1  Copy screen to $18000
+
+DMODE - Set graphic display mode
+
+DMODE jam,comp,inverse,stencil,style,thickness
+jam 0-1, complement 0-1, inverse 0-1, stencil 0-1, style 0-3,
+thickness 1-8
+
+FRE(0)  memory left in the program area (bank 0)
+
+FRE(1)  memory available in variable area (bank 1)
+
+FRE(2)  number of expansion RAM banks present
+
+GENLOCK - Enable or disable video sync mode & colors
+
+GENLOCK ON [,color#]
+
+GENLOCK OFF [,color#,R,G,B]
+
+To enable video sync mode and specify which colors are affected, use
+the GENLOCK ON command, and list the palette color indices (0-255)
+which will display external video
+
+MOUSE - Enable or disable the mouse driver
+
+MOUSE ON [,port[,sprite[,position]]]
+port = joyport 1,2 or both (1-3)
+sprite = sprite pointer (0-7)
+position(x,y)
+The user must load a pointer into the proper sprite area ($600-$7ff).
+
+PALETTE - Define a color
+
+PALETTE [screen#|COLOR],color#,red,green,blue
+
+RMOUSE - Get the mouse position and button status
+
+SCREEN - Graphic command
+
+The SCREEN command is used to initiate a graphic command. It always precedes
+another command word which identifies the graphic operation to be performed.
+
+SCREEN CLR color# Clears the currently opened graphic screen using the
+given color value
+
+SCREEN DEF define a graphic screen
+
+SCREEN DEF screen#,width,height,depth
+ screen# (0-1), width (0=320, 1=640, 2=1280), height (0=200, 1=400)
+ depth (1-8 bitplanes = 2-256 colors)
+Defines a logical screen, specifies size and color. Does not allow access
+to it and does not display the screen.
+
+SCREEN SET - Set draw and view screens
+
+SCREEN SET DrawScreen#,ViewScreen#   (0-1 both)
+screen must be defined and opened first.
+
+SCREEN OPEN - Open a screen for access.
+
+SCREEN OPEN screen#[,error_variable]   (0-1)
+This command actually sets up the screen and allocates the necessary memory
+for it. If it's the view screen it will be displayed. If it's the draw
+screen, it can now be drawn to. (...)
+
+SCREEN CLOSE - Close a screen
+==================================
+I have not had a chance to try all of these on my C65, so there is a good
+chance one or more are unimplemented on most or all versions of BASIC 10.0
+From: c900cade@w255zrz.zrz.tu-berlin.de (Simon Laule)
+
+
+
+Subject: c65 - graphics info...
+Date: Mon Jan 31 04:45:35 MST 1994
+Lines: 87
+Hi!
+
+In addition to the infos that were posted last week
+from the c65 manual, here are some _REAL_ infos,
+tested on my c65 .
+ROM version was 0.09.910111.
+
+Ok.
+
+For displaying graphics the following commands are
+necessary:
+
+screen def screen#,width,heigth,depth  - define screen# and resolution..
+screen open screen#  - allocate memory for screen#...
+screen set drawscreen#,viewscreen# (normally the same..)
+
+          -  display screen...
+
+... now all normal (basic 3.5/7.0) drawing cmds are allowed,
+    line, etc. etc.
+
+screen close screen#   - give memory free, and display text screen...
+
+If, because of RESTORE-NMI, the text screen reappears without screen close,
+all commands normally fail, because of lost memory.
+
+Possible Resolutions are:
+
+Resolution        screen def        Memory allocated
+1280*400*1        2 1 1 - ok        64k
+1280*200*1        2 0 1 - ok        32k
+1280*200*2        2 0 2 - ok        64k
+640*400*1        1 1 1 - ok        32k
+640*400*2        1 1 2 - ok        64k
+640*200*1        1 0 1 - ok        16k
+640*200*2        1 0 2 - ok        32k
+640*200*4        1 0 4 - ok        64k
+320*400*1        0 1 1 - ok        16k
+320*400*2        0 1 2 - ok        32k
+
+320*400*4        0 1 4 - failed        64k
+320*200*1        0 0 1 - ok        8k
+320*200*2        0 0 2 - failed        16k
+320*200*4        0 0 4 X failed        32k
+320*200*8        0 0 8 X failed        64k
+
+
+- failed means display ok, but screen clr palette# crashes system - RESET
+X failed means screen set crashes with blank screen - RESET
+
+I don't know, why the last three modes crash, they need the same amount
+of memory as the others, 320*200*2 needs only 16k, but crashes...
+Any ideas??????
+
+Also I don't know where the memory is allocated, a print fre
+during HiRes brings the same as without....
+
+I think the 128k Modes (320*400*8) will only available with
+RAM Expansion. Any suggestion, for this expansion????
+
+The MOUSE command mentioned in the last weeks c65 article, is not
+available in 0.09.91011, also RMOUSE.
+GRAPHIC command# [,args] brings sytax error.
+
+The screen modes use the color palette
+PALETTE screen#,color#,R(0-15),G(0-15),B(0-15)
+
+Changing the palette when displaying a screen crashes the system...
+
+I don`t know how the 1-7 bitplane graphics point to their
+palette color, just because i have only a green monitor.
+
+Ok, thats enough for now. Any comments, hints etc.
+please directly to me, i will post corrections/additions....
+
+Oh, and Im still curious about all the ROM versions out there.
+Until now i have mine (0.09.910111) and ralpheys (something like
+0.0b.910429). Are other versions??
+Im still looking for version 0.0b.910429 on disk, ralphey owns
+no eprommer, so he cannot get the image...???
+Any hints???
+OK, bye
+Simon.
+
+
+
+Subject: c65 [sixty-FIVE]
+From: tpug.sysop@canrem.com (Tpug Sysop)
+Distribution: world
+Date: Fri Feb 04 12:36:00 MST 1994
+Lines: 232
+Some stuff for the c65 [sixty-FIVE] crowd, Newz and more Questionz!
+Lets start with the Monitor;
+
+    pc   sr ac xr yr ZR sp
+; 000000 00 00 00 00 00 00
+
+A new register, and opcodez to match!
+
+LDZ $0000 : LDZ $0000,x  ..etc.
+
+The whole family is there with it, all the branches, comparez, transferz ..etc.
+[inz, dez]
+
+What is missing for this one is Zero page stuff!
+
+No; LDZ $aa : STZ $aa  ..etc. Assembling this in the Monitor nets the Absolute
+version; LDZ $00aa.
+--------------
+  Also notice that the ProgramCounter has 3 bytez/6 digitz!
+
+  Disassembling will WRAP to next BANK!
+
+df0fffe
+.f0fffe b1 fa    lda  ($fa),y
+.f10000 ff ff 02 bbs7 $ff,$0005  ;gadzookx, what's this code..?!
+--------------
+  Next are some OpCodez we *alwayz* wanted!
+
+ PHA : PLA
+ PHX : PLX
+ PHY : PLY
+ PHZ : PHZ
+
+ BRA ;BRanch Alwayz!
+
+ TYS ;Tranzfer y to Stack
+ TSY ;         Stack to y
+ TSX ;         Stack to x
+ TXS ;         x to Stack
+
+There are quite a few more.
+--------------
+There are many in the Gadzookx category!
+
+The most baffling one I have seen is MAP! Usualy preceeded with a loading of
+a, x, y and z. Then MAP. Could this be connected directly to the frankenstein
+MMU? Might be nice! ..oh, possibly the DAT [Direct Adress Tranzlator]?
+
+How about TRB, TSB, NEG, SEE, DEW, ROW, ASW, CLE, PHW, CLV,
+
+
+BBS7 $00,0000
+BBR7 $00,0000
+
+
+SMB2 $00
+RMB5 $00
+   ^
+   This value ranges from 0 to 7, proll'y branching on bitz ON/OFF.
+
+Going to need Fred for this stuff!
+--------------
+Letz get back out to Basic 10!
+
+The shortest Stereo tune around;
+
+5 vol8 : play "v1o1" :rem Volume close to CTRL G, voice and octave to 1
+10 play"c" : print "[CTRL G]";: goto 10
+
+The sound from play and CTRL G go to differant chanelz on the RCA jackz/Stereo
+but mono on a monitor w/9 pin separate video cable!
+--------------
+Function Keyz: 16 of them. Use the c128's KEY command!
+
+
+Some that are not obvious are F5/7, forward/backward by word or command.
+A space or colon are delimiterz!   [CTRL u/w is equivalent!]
+
+F9/10, Scroll Basic PRG up/down, with wrapping! [last <-> first]
+In the monitor ..memory dump up/down.
+               ..dissassembly down only!     [CTRL p/v is equivalent!]
+
+HELP [F15] highlitez error :between quotes: in Red!
+---------------
+Atributes:
+
+ Flash and Underline are still with us. Characterz can be both, just like the
+c128. There is an added _Flash_Underline_ONLY_ !!
+
+ I haven't figured out just which CRTL code ..yet.
+---------------
+ All of the c128 ESC sequences seem to be there.
+[ESC i/d, insert/delete blank line. ESC a/c, INSERT mode ON/OFF]
+---------------
+poke53280,.:poke53281,. ;have the normal c64 effect on the 80 column screen.
+
+Sreen upper left is 2048 for either 40 or 80 coloumn.
+
+poke2048,. ;will put an @ at HOME position. [$0800]
+
+poke55296,. ;turnz @ to black.              [$d800]
+
+Pokes to the 2048 to 2048+2000 area work on screen as you would expect,
+yet the second half of the 2000 does not affect colour memory!!
+
+Try;
+ forx=55296 to 55296+1999: pokex,. :next
+  ..and the last half of the screen charz will not turn black!
+
+Using a BANK command with less than 127 will disable all of these pokes!
+----------------
+Basic load adress is 8193/$2001. [I like this number!]
+----------------
+Try this; sys8192 ..it won't mess up you Fkeys or screen colourz!
+----------------
+c64 Cartridge type code loaded in c65 mode with "8,1", then hit reset.
+ ..bingo! c64 cartridge auto-start.
+----------------
+The built in 1581 drive DOS is not debugged fully!
+
+Load and save work grand, a little faster than "41 mode" but seen slowwer than
+the SSv5 turbo or Jiffy DOS.
+
+Dload/dsave and the monitor l and s seem to work fine too! <sigh>
+
+Fergit scratch, validate, collect ..etc! Various BAM corrupt/clobbered type
+errors reported!
+    -----
+Any drive error incrementz the screen border colour in c65 mode, and *alwayz*
+incrementz the border colour in c64 mode for any drive access.
+"Development System" indicatorz I'd imagine. Realy annoy'n!!
+
+c64 mode default TAPE device is gone! <yeaAH!>
+
+c64 Basic ROM is 100% indentical, except for the fill bytez in the $bf50 area.
+$ff vs $aa.
+
+Quite a bit is differant in the main Kernal due mostly to deleted Tape stuff.
+Too bad they didn't go the rest of the way, and change it to LDX $ba instead
+of LDX #$08. Minor point. In c65 mode woulda been great!
+
+    -----
+At reset with disk in the drive file "autoboot.c65*" is loaded and RUN.
+----------------
+Bank 020000 has Drive DOS, c64 Basic at $02a000 to $02bfff, some odd code
+right at $02c000, *some* c65 code at $02c800, char-set $02d000 to $02dfff,
+Kernal $02e000 on up..
+
+Neat being able to access c64 code in c65 mode ..haR!
+
+Bank 03xxxx has c65 code..
+
+Bank F0xxxx has I/O stuff..
+----------------
+Here is a funky one, turnz yer whole screen into a flashing cursor!!
+
+First into the monitor w/F8.
+Clear screen.
+type: mf0d000 <and return>
+cursor down to:
+>f0d020 d6 d6 d1 d2 ....
+         ^  ^
+         change these to zero'z, and hit return.
+Screen colour is now black.
+Now cursor down to:
+>f0d0f0 00 ...
+^
+^
+
+Put cursor there!
+
+Bingo! Yer whole screen is flashing!
+Just move yer cursor off to stop it!
+----------------
+At some point some "underlines" *stay'd* on screen after I cleared it!
+Bug or Plan, dunno ..yet!
+----------------
+]-[ighlander BBS is setting up a c65 file directory and message base to
+support the c65 crowd ..see you there!     [416+588+0922, C=/ASCII/ANSI]
+----------------
+TPUG is starting a c65 Library.. [nothing yet!!]
+5334 Yonge St. Box #116, Willowdale, Ont, Can. M2N 6M2
+----------------
+ This is great fun! Lotz more to come of course after some serious head
+scratching!
+ ..I wanna see some of those Extra colourz NOW!
+
+[Please pass this on..:]
+
+ ____ ___    ___
+  /  /__// //__  Toronto Pet User Group
+ /  /   /_//__/ 64/128 Amiga Pet CP/M Vic ..c65!                ]>ug..
+End of article 15101 (of 15107) -- what next?
+
+comp.sys.cbm #15104 (3 more)
+From: c900cade@w255zrz.zrz.tu-berlin.de (Simon. Laule)
+Subject: c65...all new opcodes
+Date: Sat Feb 05 06:17:58 MST 1994
+Lines: 132
+
+In addition to the tpug infos heres a list of _all_ new opcodes,
+with some infos. I wanted to post this article for weeks,
+but I havent enough time.
+
+small x,y,z = Register , big X Hex-Wert...
+OPCODE  NAME (from monitor)  BYTES
+
+ 02        CLE                1 Clear Emulation ???
+ 03        SEE                1 Set Emulation ???
+ 04        TSB $XX                2
+ 07        RMB0 $XX        2
+ 0b        TSY                1
+ 0c        TSB $XXXX        3
+ 0f        BBR0 $XX,$XXXX        3    branch on bit reset (0.bit) bbr0-bbr7
+ 12        ORA ($XX),z        2             ( also bbs0-7: branch on bit set)
+ 13        BPL $XXXX        3               (just like 65c02)
+ 14        TRB $XX                2
+ 17        RMB1 $XX        2
+ 1a        INC                1
+ 1b        INZ                1                    increment Z-Register
+ 1c        TRB $XXXX        3
+ 1f        BBR1 $XX,$XXXX        3
+ 22        JSR ($XXXX)        3
+ 23        JSR ($XXXX,x)        3       ;new: JSR x-indiziert
+ 27        RMB2 $XX        2            ;Reset bit 2, ZP
+ 2b        TYS                1
+ 2f        BBR2 $XX,$XXXX        3
+ 32        AND ($XX),z        2
+ 33        BMI $XXXX        3
+ 34        BIT $XX,x        2
+ 37        RMB3 $XX        2
+ 3a        DEC                1
+ 3b        DEZ                1
+ 3c        BIT $XXXX,x        3
+ 3f        BBR3 $XX,$XXXX        3
+ 42        NEG                1               negate akku???
+ 43        ASR                1
+ 44        ASR $XX                2
+ 47        RMB4 $XX        2
+ 4b        TAZ                1        ;transfer akku -> z-register
+ 4f        BBR4 $XX,$XXXX        3
+ 52        EOR ($XX),z        2
+ 53        BVC $XXXX        3
+ 54        ASR $XX,x        2
+ 57        RMB5 $XX        2
+ 5a        PHY                1
+ 5b        TAB                1
+ 5c        MAP                1
+ 5f        BBR5 $XX,$XXXX        3
+ 62        RTS #$XX        2
+ 63        BSR $XXXX        3
+ 64        STZ $XX                2        ;trivia
+ 67        RMB6 $XX        2
+ 6b        TZA                1        ;transfer z-reg -> akku
+ 6f        BBR6 $XX,$XXXX        3
+ 72        ADC ($XX),z        2
+ 73        BVS $XXXX        3
+ 74        STZ $XX,x        2
+ 77        RMB7 $XX        2
+ 7a        PLY                1        ; pull from stack in y-register
+ 7b        TBA                1
+ 7c        JMP ($XXXX,x)        3
+ 7f        BBR7 $XX,$XXXX        3
+ 80        BRA $XX                2            ;branch always (relativ)
+ 82        STA ($XX,SP),y        2  SP - StackPointer, like 65c816
+ 83        BRA $XXXX        3         ;branch always ( direkt or relativ long)
+
+ 87        SMB0 $XX        2            ;set bit 0, ZP
+ 89        BIT #$XX        2
+ 8b        STY $XXXX,x        3
+ 8f        BBS0 $XX,$XXXX        3
+ 92        STA ($XX),z        2
+ 93        BCC $XXXX        3
+ 97        SMB1 $XX        2
+ 9b        STX $XXXX,y        3
+ 9c        STZ $XXXX        3
+ 9e        STZ $XXXX,x        3
+ 9f        BBS1 $XX,$XXXX        3
+ a3        LDZ #$XX        2
+ a7        SMB2 $XX        2
+ ab        LDZ $XXXX        3
+ af        BBS2 $XX,$XXXX        3
+ b2        LDA ($XX),z        2
+ b3        BCS $XXXX        3
+ b7        SMB3 $XX        2
+ bb        LDZ $XXXX,x        3
+ bf        BBS3 $XX,$XXXX        3
+ c2        CPZ #$XX        2
+ c3        DEW $XX                2
+ c7        SMB4 $XX        2
+ cb        ASW $XXXX        3
+ cf        BBS4 $XX,$XXXX        3
+ d2        CMP ($XX),z        2
+ d3        BNE $XXXX        3
+ d4        CPZ $XX                2
+ d7        SMB5 $XX        2
+ da        PHX                1
+ db        PHZ                1
+ dc        CPZ $XXXX        3
+ df        BBS5 $XX,$XXXX        3
+ e2        LDA ($XX,SP),y        2
+ e3        INW $XX                2
+ e7        SMB6 $XX        2
+ eb        ROW $XXXX        3
+ ef        BBS6 $XX,$XXXX        3
+ f2        SBC ($XX),z        2
+ f3        BEQ $XXXX        3
+ f4        PHW #$XXXX        3
+ f7        SMB7 $XX        2
+
+ fa        PLX                1
+ fb        PLZ                1
+ fc        PHW $XXXX        3
+ ff        BBS7 $XX,$XXXX        3
+
+ Ok, I know all those z-Register commands, but there are some I dont
+know, like BBS0-BBS7.
+Also there are the W commands (DEW,  ROW, ...). Lokks like they are
+WORD (16 bit) commands, working on stack and/or zeropage,.
+Another question is the PC, is it true 24 Bit or not??
+Could be the B commands (TRB,..) working directly on the bank
+register.??
+
+I'm still looking forward for an answer by Fred Bowen, posting the
+4510 data-sheet....
+
+
+Please post any changes, suggestions to this list directly to me...
+I will correct and post it again. Any test programs, for bank
+switching are welcome...
+
+Bye,
+Simon.
+End of article 15104 (of 15107) -- what next?
+
+From: Walter.Harms@arbi.informatik.uni-oldenburg.de (Walter Harms)
+Subject: Re: Commodore Products List 1-19-94
+Date: Thu Feb 03 04:48:48 MST 1994
+Lines: 17
+
+BTW: I saw A C65 (rpt C65!). I wouldnt have believed it.
+the guy told my that ca 1000 where produced...
+...for the german-readers:
+Its on sale at the HOBBYTRONIC in DORTMUND (it was yesterday)
+costs 998.-DM (ca 500$).
+there where a speed-up-kit for the c64 to 8Mhz available too.
+
+        walter
+--------------------------------------------
+gpage note: we in the U.S. first heard about the availability of these
+computers through an ad placed in a few magazines by The Grapevine
+Group back in Sep/Oct '93. They were originally listed at (US$)95.50,
+but the price was quickly shifted to $129, possibly due to their
+extra expense of trying to find suitable power supplies(?). The first
+small batch they sold were NTSC, and the rest apparently were PAL,
+with letters being mailed out to allow U.S. buyers to cancel.  They
+attempted to obtain NTSC chips from CBM, but were unsuccessful.  I
+had ordered mine when I first heard about them, on 15Sep93.  I finally
+received it the 2nd week of Jan'94.  I am still trying to find out
+just how many were produced and made available. A Grapevine spokes-
+person guessed "about 300", Fred Bowen said about 50, and the German
+source in the last message said about 1000.  On the echos I'd say
+we've heard of a max of 20.
+
+Since the chip complement hasn't been mentioned yet, I'd figure I'd
+add the rundown of mine to this file.  Unfortunately, I don't know
+what all of them are, and aren't sure enough on some others, so I'm
+just listing numbers and maybe descriptions. Don't want to mislead
+with wrong guesses :)
+
+First, my C65 has no label or S/N. The screen ROM message is
+Basic 10.0  V0.9.910111         English Keyboard
+
+U1 4510r3 (a large square chip) labeled "Victor"  mfgr CBM
+U2 4567r5 (same) "Bill"  CBM
+U3 390989 (20pin DIP with paper label) CBM
+U4,U5 8580r5 (28pin DIP) CBM
+U6 390488-02 (02 x'd out in pencil and changed to 03 CAFF c'91)
+  (32 pin 27C010 Eprom)
+U7,U8,U9,U10 TMS4464-10NL (18pin DIP) Texas Instruments
+U11 390548-01 (20pin DIP with paper label) "Elmer" CBM
+U12,U13 MC14066BCP (14pin DIP) Motorola
+U14 LC3517B-15 (24pin DIP) Sanyo
+U15 DM74LS125AN (14pin DIP) logo of 2 tilde's (?)
+U16 7809CT (3pin TO220) Motorola
+U17 390957-01 (48pin DIP) "D-Magic" CBM
+U18 SN74ALS244BN (20pin DIP)
+U19 28.37516 crystal (4pin plug-in)
+U20 vacant socket
+U21 EP4978-15 (???) PCA
+U22 390491-02 (large square) CBM
+All except U12, U13, U16, U21 and U22 are socketed
+Also contains crystal X1 8.000
+
+Board says C64 DX Rev 2B, Commodore Electronics Ltd, cpywrt 1990
+with a little red sticker that says A 18-2. Assembled in Hong Kong.
+Keyboard is Mitsumi 20910130. Drive mech is Chinon FB-354C RevA 01/91.
+Drive S/N is 10100183.
+
+
+From: Lonnie McClure <lmcclure@delphi.com>
+Subject: Re: Analog Video Output pins for C65
+Date: Sat Feb 05 16:02:01 MST 1994
+Lines: 23
+X-To: <MSTROU31@MAINE.MAINE.EDU>
+
+     "I need the pin out of the video connector on the Commodore
+      C65."
+
+     "I believe that I need both HORIZONTAL & VERTICAL SYNCS AND
+      THE PINS OF THE GROUND AND THOSE OF EACH COLOR RED, GREEN,
+      AND BLUE."
+
+When looking at the DB-9 RGB port, it should be arranged as follows:
+
+                      1 2 3 4 5
+                       6 7 8 9
+
+     1 - Ground
+     2 - ?
+     3 - Red
+     4 - Green
+     5 - Blue
+     6 - ?
+     7 - Composite sync
+     8 - Horizontal sync
+     9 - Vertical sync
+
+
+
+Several of us have checked and confirmed that the Amiga "belly hatch" RAM
+expander boards will not fit onto the C65's belly hatch connector.
+
+The release date of this FAQ file #2 is 7 Feb '94.
+
+
